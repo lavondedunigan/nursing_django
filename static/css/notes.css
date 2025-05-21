@@ -1,0 +1,65 @@
+
+
+.note-list {
+    text-align: center;
+    color: darkcyan
+}
+
+
+.note-list .note {
+    border: 1px solid #333;
+    border-radius: 4px;
+
+    width: 250px;
+    display: inline-block;
+    margin: 10px auto;
+    margin-bottom: 10px; 
+
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);.note-list .note h3  {
+    text-align: center;
+    color: #333;
+}
+
+.note-list .note label {
+    color: #979b9d;
+    font-size: 12px;
+}
+    font-weight: bold;
+    font-size: 16px;    
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+
+
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;                     
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;                
+    line-height: 1.5;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+    text-decoration: none;  
+}

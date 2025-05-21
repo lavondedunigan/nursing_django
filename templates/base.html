@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <link rel="stylesheet" href="{% static 'css/app.css' %}">
-    {% block css %}[% endblock %}]
+    {% block css %}{% endblock %}
 </head>
 <body>
     <!-- Navbar -->
      {% include 'navbar.html' %}
     <div> 
-        <h5> Nav will be here</h5>
+        <h5> Nav will be here </h5>
     </div>
 
     {% block content %}
