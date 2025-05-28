@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from .models import Note
+from django.views import generic
 
 #Create your views here.
 """
@@ -13,8 +14,20 @@ DeleteView  = remove a record
 UpdateView  = modify an existing record
 LoginView   = login
 """
+from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, TemplateView
 
 # Create your views here.
 class NoteList(ListView):
     model = Note
     template_name = 'notes/list.html'
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

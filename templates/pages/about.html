@@ -5,6 +5,30 @@
 
 <h3> About Me</h3>
 <h1>LaVonde Dunigan</h1>
+<p>Welcome to my personal page! I am a software developer with a passion for creating innovative solutions. This page is a brief introduction to who I am and what I do.</p>
+<p>Feel free to explore my work and connect with me!</p>
+<p>For more information, you can visit my <a href=https://github.com/lavondedunigan/nursing_django>GitHub</a> profile.</p>
+<p>Thank you for visiting!</p>
+{% endblock %}
+
+{% block title %}About Me{% endblock %}
+
+{% block css %}         
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/about.js' %}"></script>
+{% endblock %}
+
+{% block footer %}
+<footer class="text-center mt-5">
+    <p>© 2025 LaVonde Dunigan</p>
+</footer>
+<div class="container mt-5">
+    {% block content %}
+    {% endblock %}
+</div>
 
 {% endblock %}
 

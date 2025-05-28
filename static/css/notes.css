@@ -5,8 +5,12 @@
     color: darkcyan
 }
 
+.note-list img {
+    max-width: 100%;
+}
 
-.note-list .note {
+
+.note-list .note{
     border: 1px solid #333;
     border-radius: 4px;
 
@@ -26,40 +30,4 @@
     color: #979b9d;
     font-size: 12px;
 }
-    font-weight: bold;
-    font-size: 16px;    
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
-
-
-    text-decoration: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;                     
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;                
-    line-height: 1.5;
-    color: #333;
-    text-decoration: none;
-    text-align: center;
-
-    cursor: pointer;
-    text-decoration: none;  
-}
+    

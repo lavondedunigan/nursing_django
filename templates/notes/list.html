@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}All your notes{% endblock %}
+{% block title %}All your notes{% endblock title %}
 
 {% load static %}
 {% block css %}
@@ -13,7 +13,7 @@
     <h1>These are all your notes</h1>
 
     <div class="list">
-        {% for note in notes %}
+        {% for note in note_list %}
             <div class="note">
                 
                 {% if note.image %} 
@@ -22,7 +22,20 @@
             
                 <h3>{{ note.title }}</h3>
                 <label>{{ note.created_on }}</label>
+            
+
+                <div class="note-content">
+                    <p>{{ note.content }}</p>
+                    <a href="" class="btn btn-primary">View Note</a>
+                    <a href="" class="btn btn-secondary">Edit Note</a>
+                    <form action="" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Delete Note</button>
+                    </form>
+                </div>
             </div>
+        {% empty %}
+            <p>No notes available.</p>
         {% endfor %}
     </div>
 
