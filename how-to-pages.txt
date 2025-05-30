@@ -1,0 +1,10 @@
+How to create new pages on the Pages appointments
+
+1 - create the view
+
+2 - create the template
+
+3 - create the url
+
+
+4 - (if needed) update the navbar 

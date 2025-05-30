@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, DeleteView
 from .models import Note
-from django.views import generic
+from django.urls import reverse_lazy
+
+
 
 #Create your views here.
 """
@@ -23,7 +25,13 @@ class NoteList(ListView):
     
     
     
+class NoteCreate(CreateView):
+    model = Note
+    fields = ['title', 'content', 'image']
+    template_name = 'notes/details.html'
+    success_url = reverse_lazy('notes:list')
     
+
     
     
     

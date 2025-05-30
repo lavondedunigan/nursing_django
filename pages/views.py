@@ -21,3 +21,6 @@ def home_view(request):
 
 def about_view(request):
     return render(request, 'pages/about.html')
+
+def doctor_view(request):
+    return render(request, 'pages/doctors.html')

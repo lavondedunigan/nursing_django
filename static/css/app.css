@@ -6,7 +6,9 @@ html, body {
     overflow: hidden;
     font-family: 'Arial', sans-serif;
 
+
     color: #333;
+
 
 
     font-size: 16px;
@@ -14,12 +16,34 @@ html, body {
 
     background-color: #f4f4f4;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    
+
+    /* For iOS devices */
+    -webkit-touch-callout: none;
+   
+
+
+
 
 }
 
 
 .navbar {
   background-color: darkblue;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 
