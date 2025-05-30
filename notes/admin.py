@@ -5,3 +5,6 @@ from .models import Note,  NoteComment
 admin.site.register(Note)
 admin.site.register(NoteComment)
 # admin.site.register(NoteComment)  # This line is already included in the import above
+
+
+

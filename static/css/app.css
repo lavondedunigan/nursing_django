@@ -21,15 +21,12 @@ html, body {
     -ms-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     -webkit-overflow-scrolling: touch;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    /* For iOS devices */
-    -webkit-touch-callout: none;
-   
-
-
-
-
+    transition: background-color 0.3s ease-in-out; 
 }
 
 
@@ -44,6 +41,29 @@ html, body {
   top: 0;
   width: 100%;
   z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-image: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 

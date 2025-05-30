@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 """
 Class-based views:
@@ -24,3 +25,14 @@ def about_view(request):
 
 def doctor_view(request):
     return render(request, 'pages/doctors.html')
+
+def nurse_view(request):
+    return render(request, 'pages/nurses.html')
+
+def patient_view(request):
+    return render(request, 'pages/patients.html')
+
+def contact_view(request):
+    return render(request, 'pages/contact.html')
+
+

@@ -2,11 +2,105 @@
 
 .note-list {
     text-align: center;
-    color: darkcyan
+    color: darkcyan;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px; /* Adjust for fixed navbar height */
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the note list */
+    margin: 0 auto; /* Center the note list */
+    overflow: auto; /* Allow scrolling if content overflows */
+    background-color: #f9f9f9; /* Lighter background for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px; /* Adjust for fixed navbar height */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 60px; /* Adjust for fixed navbar height */
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the note list */
+    margin: 0 auto; /* Center the note list */
+    overflow: auto; /* Allow scrolling if content overflows */
+    background-color: #f9f9f9; /* Lighter background for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 80px; /* Adjust for fixed navbar height */
+    margin-bottom: 20px; /* Add some space at the bottom */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .note-list img {
     max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }   
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limit the width of images */
+    margin-bottom: 20px; /* Add some space below images */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 
@@ -24,10 +118,175 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);.note-list .note h3  {
     text-align: center;
     color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limit the width of notes */
+    margin-bottom: 20px; /* Add some space below notes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .note-list .note label {
     color: #979b9d;
     font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limit the width of notes */
+    margin-bottom: 20px; /* Add some space below notes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+.note-list .note p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limit the width of notes */
+    margin-bottom: 20px; /* Add some space below notes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+
 }
+
+.note-list .note a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: darkcyan;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    &:hover {
+        background-color: #005f5f;
+        transform: scale(1.05);
+    }
+}
+.note-list .note a:hover {
+    background-color: #005f5f;
+    transform: scale(1.05);
+}       
+.note-list .note a:visited {
+    color: #fff;
+}
+
+
+.note-list .note a:active {
+    background-color: #004040;
+    transform: scale(0.95);
+}
+.note-list .note a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 128, 128, 0.5);
+}
+.note-list .note a:focus:hover {
+    background-color: #005f5f;
+    transform: scale(1.05);
+}
+.note-list .note a:focus:active {
+    background-color: #004040;
+    transform: scale(0.95);
+}
+.note-list .note a:focus-visible {
+    outline: 2px solid darkcyan;
+    outline-offset: 2px;
+}
+.note-list .note a:focus-visible:hover {
+    background-color: #005f5f;
+    transform: scale(1.05);
+}
+.note-list .note a:focus-visible:active {
+    background-color: #004040;
+    transform: scale(0.95);
+}
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Limit the width of notes */
+    margin-bottom: 20px; /* Add some space below notes */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+.note-list .note h3 {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+}
+.note-list .note label {
+    color: #979b9d;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+}
+.note-list .note p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+        color: darkcyan;
+    }
+}
+
     
