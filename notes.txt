@@ -51,3 +51,10 @@ python3 manage.py startapp pages
   - url
 
 # style it
+
+
+# git add -A
+
+# git commit -m "correct errors"
+
+# git push

@@ -1,8 +1,8 @@
-from django.shortcuts import render
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView, DetailView, DeleteView
+from django.shortcuts import render, redirect
+from django.views.generic import ListView, CreateView, UpdateView, DetailView, UpdateView, DeleteView
 from .models import Note, NoteComment
-from django.urls import reverse_lazy
 from .forms import NoteForm
+from django.urls import reverse_lazy
 
 
 
@@ -25,13 +25,14 @@ class NoteList(ListView):
        
 class NoteCreate(CreateView):
     model = Note
-    fields = ['title', 'content', 'image']
-    template_name = 'notes/details.html'
-    success_url = reverse_lazy('notes:list')
+    form_class = NoteForm
+    template_name = 'notes/create.html'
+    success_url = reverse_lazy('notes_list')
     
     def get_context_data(self, **kwargs):
+        # allow usto extend/modify the context pass to the template
         context = super().get_context_data(**kwargs)
-        context["title"] = "Update Note"
+        context["title"] = "Create Note"
         return context
         
   
@@ -52,13 +53,15 @@ class NoteDetail(DetailView):
     
 class NoteUpdate(UpdateView):
     model = Note
-    form_class = NoteForm
     template_name = "notes/create.html"
-    success_url = reverse_lazy('notes:list')
+
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["title"] = "Update Note"
+        # load all comment for this note
+        note = self.object
+        comments = NoteComment.objects.filter(note=note).prefetch_related('author')
+        context['comments'] = comments
         return context
     
 
@@ -66,6 +69,29 @@ class NoteDelete(DeleteView):
     model = Note
     template_name = "notes/delete.html"
     success_url = reverse_lazy('note_list')
+    
+def save_commment(request):
+        model = Note
+        template_name = "notes/delete.html"
+        success_url = reverse_lazy('note_list')
+    
+def save_comment(request):
+    note_id = request.POST.get('note_id')
+    text = request.POST.get('context')
+    user = request.user  # logged in user
+
+    # read the note record from the database
+    note = Note.objects.get(id=note_id)
+
+    # create a new comment record
+    comment = NoteComment.objects.create(
+        note=note,
+        content=text,
+        author=user
+    )
+
+    comment.save()
+    return redirect('note_detail', pk=note_id)
 
        
     

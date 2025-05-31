@@ -10,14 +10,17 @@
 {% block content %}
 <div class="note-list">
 
+    <div class="title-row">
     <h1>These are all your notes</h1>
+    <a class="btn btn-primary" href="{% url 'notes_create' %}">Create New Note</a>
+    </div>
 
     <div class="list">
         {% for note in note_list %}
             <div class="note">
                 
                 {% if note.image %} 
-                    <img src="{{ note.image.url }}">
+                <img src="{{ note.image.url }}">
                 {% endif %}
             
                 <h3>{{ note.title }}</h3>

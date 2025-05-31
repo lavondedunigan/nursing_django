@@ -16,6 +16,10 @@
 <body>
     
     {% include 'navbar.html' %}
+
+    {% block content %}
+
+    {% endblock %}
     
     {% if messages %}
         <div class="container mt-3">
@@ -27,23 +31,7 @@
         </div>
     {% endif %}
 
-    {% if user.is_authenticated %}
-        <div class="container mt-3">
-            <p>Welcome<p>
-            <a  class="btn btn-primary">Logout</a>
-        </div>
-    {% else %}
-        <div class="container mt-3">
-            <a class="btn btn-danger">Login</a>
-        </div>
-    {% endif %}
-
-
-    <div class="container mt-5">
-        {% block content %}
-        {% endblock %}
-    </div>
-
+   
     
    
 </div>
