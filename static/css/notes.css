@@ -214,7 +214,7 @@
 
 
 .note-list .note a:active {
-    background-color: #004040;
+    background-color: lightcoral;
     transform: scale(0.95);
 }
 .note-list .note a:focus {

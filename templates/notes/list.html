@@ -12,7 +12,6 @@
 
     <div class="title-row">
     <h1>These are all your notes</h1>
-    <a class="btn btn-primary" href="{% url 'notes_create' %}">Create New Note</a>
     </div>
 
     <div class="list">
@@ -37,9 +36,8 @@
                     </form>
                 </div>
             </div>
-        {% empty %}
             <p>No notes available.</p>
-        {% endfor %}
+            {% endfor %}
     </div>
 
 </div>
