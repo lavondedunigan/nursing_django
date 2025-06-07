@@ -1,0 +1,19 @@
+To list patients
+
+- on pages/models.py create a Patient model
+first_name
+last_name
+date_birth
+age
+last_visit
+balance
+
+- on pages/admin.py import and register the model 
+the same way that notes/admin is registering the Note model
+
+- stop the server (ctrl + c)
+- py manage.py makemigrations
+- py manage.py migrate
+- start the server
+
+- visit the admin page and create patients

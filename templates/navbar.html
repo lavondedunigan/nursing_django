@@ -85,9 +85,9 @@ style="color: whitesmoke !important;" >
             Dropdown link
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Patient Account</a></li>
-            <li><a class="dropdown-item" href="#">Patient Balance</a></li>
-            <li><a class="dropdown-item" href="#">Referrals</a></li>
+            <li><a class="dropdown-item" href="{% url 'patient-account' %}" style="color: blue;">Patient Account</a></li>
+            <li><a class="dropdown-item" href="{% url 'patient-balance' %}" style="color: blue;">Patient Balance</a></li>
+            <li><a class="dropdown-item" href="{% url 'referrals' %}" style="color: blue;">Referrals</a></li>
           </ul>
         </li>
       </ul>

@@ -35,4 +35,13 @@ def patient_view(request):
 def contact_view(request):
     return render(request, 'pages/contact.html')
 
+def patient_account_view(request):
+    return render(request, 'pages/patient_account.html')
+
+def patient_balance_view(request):
+    return render(request, 'pages/patient_balance.html')
+
+def referrals_view(request):
+    return render(request, 'pages/referrals.html') 
+
 

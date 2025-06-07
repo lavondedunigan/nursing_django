@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Patient Account{% endblock title %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/notes.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="note-list">
+
+    <div class="title-row">
+    <h1>This is the patient account</h1>
+    </div>
+
+    <div class="list">
+        {% for note in note_list %}
+            <div class="note">
+                
+                {% if note.image %} 
+                <img src="{{ note.image.url }}">
+                {% endif %}
+            
+                <h3>{{ note.title }}</h3>
+                <label>{{ note.created_on }}</label>
+            
+
+                <div class="note-content">
+                    <p>{{ note.content }}</p>
+                    <a href="" class="btn btn-primary">View Patient Account</a>
+                    <a href="" class="btn btn-secondary">Edit Patient Account</a>
+                    <form action="" method="post" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger">Delete Patient Account</button>
+                    </form>
+                </div>
+            </div>
+            <p>No notes available.</p>
+            {% endfor %}
+    </div>
+
+</div>
+{% endblock %}
