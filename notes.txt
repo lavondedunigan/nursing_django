@@ -18,7 +18,6 @@ python3 -m pip install django
 # create a django project
 django-admin startproject config .
 
-
 # create an app inside django
 python3 manage.py startapp pages
 

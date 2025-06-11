@@ -15,28 +15,11 @@
     </div>
 
     <div class="list">
-        {% for note in note_list %}
-            <div class="note">
+        {% for account in all_accounts %}
+            <div class="account">
+                <h5>{{account.first_name}} {{account.last_name}}</h5>
                 
-                {% if note.image %} 
-                <img src="{{ note.image.url }}">
-                {% endif %}
-            
-                <h3>{{ note.title }}</h3>
-                <label>{{ note.created_on }}</label>
-            
-
-                <div class="note-content">
-                    <p>{{ note.content }}</p>
-                    <a href="" class="btn btn-primary">View Patient Account</a>
-                    <a href="" class="btn btn-secondary">Edit Patient Account</a>
-                    <form action="" method="post" class="d-inline">
-                        {% csrf_token %}
-                        <button type="submit" class="btn btn-danger">Delete Patient Account</button>
-                    </form>
-                </div>
             </div>
-            <p>No notes available.</p>
             {% endfor %}
     </div>
 

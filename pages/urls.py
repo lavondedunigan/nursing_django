@@ -10,7 +10,7 @@ urlpatterns = [
     path('patients/', views.patient_view, name="patients"),
     path('contact/', views.contact_view, name="contact"),
     
-    path('patient_account/', views.patient_account_view, name="patient-account"),
+    path('patient_account/', views.PatientAccountView.as_view(), name="patient-account"),
     path('patient_balance/', views.patient_balance_view, name="patient-balance"),
     path('referrals/', views.referrals_view, name="referrals"),
    

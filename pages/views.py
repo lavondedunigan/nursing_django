@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from .models import PatientAccount
 
 
 # Create your views here.
@@ -35,8 +37,11 @@ def patient_view(request):
 def contact_view(request):
     return render(request, 'pages/contact.html')
 
-def patient_account_view(request):
-    return render(request, 'pages/patient_account.html')
+class PatientAccountView(ListView):
+    model = PatientAccount
+    template_name = 'pages/patient_account.html'
+    context_object_name = "all_accounts"
+
 
 def patient_balance_view(request):
     return render(request, 'pages/patient_balance.html')
