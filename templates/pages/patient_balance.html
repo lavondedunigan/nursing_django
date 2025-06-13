@@ -12,8 +12,52 @@
 
     <div class="title-row mb-4">
     <h1>Patient Balance</h1>
-    <h5>Patient Name: John Doe</h5>
-    <h5>Patient ID: 123456</h5> 
+    <h5>Patient Name: Sergio Inzunza</h5>
+    <h5>Patient ID: 456789</h5> 
+    <h5>Insurance Provider: HealthCare Inc.</h5>
+    <h5>Insurance Policy Number: ABC123456</h5>
+    <h5>Insurance Coverage: 80%</h5>
+    <h5>Outstanding Balance: $1,089.00</h5>
+    <h5>Last Payment Date: 2023-10-01</h5>
+    <h5>Next Payment Due: 2023-11-01</h5>
+        
+    <h5>Payment History: 5 payments made in the last 6 months</h5>
+    <h5>Payment Method: Credit Card</h5>
+    <h5>Payment Status: Active</h5>
+    <h5>Contact Information:</h5>
+    <h1>This is the patient balance</h1>
+    <h5>$1,089.00</h5>
+
+    </div>
+
+    <div class="note-list">
+
+    <div class="title-row mb-4">
+    <h1>Patient Balance</h1>
+    <h5>Patient Name: Somerz Isabella</h5>
+    <h5>Patient ID: 4560321</h5> 
+    <h5>Insurance Provider: HealthCare Inc.</h5>
+    <h5>Insurance Policy Number: ABC123456</h5>
+    <h5>Insurance Coverage: 90%</h5>
+    <h5>Outstanding Balance: $1,089.00</h5>
+    <h5>Last Payment Date: 2025-06-01</h5>
+    <h5>Next Payment Due: 2025-07-01</h5>
+        
+    <h5>Payment History: 4 payments made in the last 6 months</h5>
+    <h5>Payment Method: Credit Card</h5>
+    <h5>Payment Status: Active</h5>
+    <h5>Contact Information:</h5>
+    <h1>This is the patient balance</h1>
+    <h5>$2,356.09</h5>
+
+    </div>
+
+    <div class="note-list">
+
+    <div class="title-row mb-4">
+    <h1>Patient Balance</h1>
+    <h5>Patient Name: Sergio Inzunza</h5>
+    <h5>Patient ID: 456789</h5> 
     <h5>Insurance Provider: HealthCare Inc.</h5>
     <h5>Insurance Policy Number: ABC123456</h5>
     <h5>Insurance Coverage: 80%</h5>
@@ -40,10 +84,46 @@
             
                 <h3>{{ note.title }}</h3>
                 <label>{{ note.created_on }}</label>
-            
 
                 <div class="note-content">
+                    <label class="hint">Sergio Inzunza:</label>
+                    <h5>{{ note.patient_name }}</h5>
+                    <label class="hint">Patient ID:</label>
+                    <p>{{ note.patient_id }}</p>
+                    <label class="hint">Insurance Provider:</label>
+                    <p>{{ note.insurance_provider }}</p>
+                    <p>{{ note.content }}</p>   
+                    <label class="hint">Insurance Policy Number:</label>
+
+                    <p>{{ note.insurance_policy_number }}</p>
+                    <label class="hint">Insurance Coverage:</label>
+                    <p>{{ note.insurance_coverage }}</p>
+                    <label class="hint">Outstanding Balance:</label>
+                    <p>{{ note.outstanding_balance }}</p>
+
+                    <label class="hint">Last Payment Date:</label>
+                    <p>{{ note.last_payment_date }}</p>
+
+                    <label class="hint">Next Payment Due:</label>
+                    <p>{{ note.next_payment_due }}</p>
+
+                    <label class="hint">Payment History:</label>
+                    <p>{{ note.payment_history }}</p>
+                    <label class="hint">Payment Method:</label>
+                    <p>{{ note.payment_method }}</p>
+
+
+                    <label class="hint">Payment Status:</label>
+                    <p>{{ note.payment_status }}</p>
+                    <label class="hint">Contact Information:</label>
+                    <p>{{ note.contact_information }}</p>
                     <p>{{ note.content }}</p>
+
+                    <label class="hint">Notes:</label>
+                    <p>{{ note.notes }}</p>
+                    <p>{{ note.content }}</p>
+                    <label class="hint">Additional Information:</label>
+                    <p>{{ note.additional_information }}</p>
                     <a href="" class="btn btn-primary">View Balance</a>
                     <a href="" class="btn btn-secondary">Edit Balance</a>
                     <form action="" method="post" class="d-inline">
