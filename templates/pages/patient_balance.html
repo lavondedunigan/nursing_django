@@ -4,15 +4,30 @@
 
 {% load static %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/notes.css' %}">
+<link rel="stylesheet" href="{% static 'css/patient_balance.css' %}">
 {% endblock %}
 
 {% block content %}
 <div class="note-list">
 
-    <div class="title-row">
+    <div class="title-row mb-4">
+    <h1>Patient Balance</h1>
+    <h5>Patient Name: John Doe</h5>
+    <h5>Patient ID: 123456</h5> 
+    <h5>Insurance Provider: HealthCare Inc.</h5>
+    <h5>Insurance Policy Number: ABC123456</h5>
+    <h5>Insurance Coverage: 80%</h5>
+    <h5>Outstanding Balance: $1,089.00</h5>
+    <h5>Last Payment Date: 2023-10-01</h5>
+    <h5>Next Payment Due: 2023-11-01</h5>
+        
+    <h5>Payment History: 5 payments made in the last 6 months</h5>
+    <h5>Payment Method: Credit Card</h5>
+    <h5>Payment Status: Active</h5>
+    <h5>Contact Information:</h5>
     <h1>This is the patient balance</h1>
     <h5>$1,089.00</h5>
+
     </div>
 
     <div class="list">

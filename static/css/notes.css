@@ -113,7 +113,7 @@
     margin: 10px auto;
     margin-bottom: 10px; 
 
-    background-color: #fff;
+    background-color:rosybrown ;
     padding: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);.note-list .note h3  {
     text-align: center;
@@ -195,9 +195,13 @@
     margin-top: 10px;
     padding: 8px 16px;
     background-color: darkcyan;
-    color: white;
+    color:roseybrown;
     text-decoration: none;
     border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     &:hover {
         background-color: #005f5f;

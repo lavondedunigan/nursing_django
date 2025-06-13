@@ -4,24 +4,23 @@
 
 {% load static %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/notes.css' %}">
+<link rel="stylesheet" href="{% static 'css/patient_account.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="note-list">
-
-    <div class="title-row">
-    <h1>This is the patient account # </h1>
-    <h5>Patient name = </h5>
-    <h5> Doctor is:</h5>
-    </div>
+<div class="patient-account">
 
     <div class="list">
         {% for account in all_accounts %}
             <div class="account">
+                <label class="hint">Patient name:</label>
                 <h5>{{account.first_name}} {{account.last_name}}</h5>
-                <h4>{{account.dob}}</h4>
-                <h5>{{account.primary_doctor}}</h5>
+
+                <label class="hint">DOB:</label>
+                <p>{{account.date_of_birth}}</p>
+
+                <label class="hint">Primary Dr.:</label>
+                <label>{{account.primary_doctor}}</label>
 
                 
             </div>
