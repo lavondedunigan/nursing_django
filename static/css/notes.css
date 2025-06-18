@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f4f4f4;
+    background-color: mediumvioletred;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -25,7 +25,7 @@
     max-width: 1200px; /* Limit the width of the note list */
     margin: 0 auto; /* Center the note list */
     overflow: auto; /* Allow scrolling if content overflows */
-    background-color: #f9f9f9; /* Lighter background for better contrast */
+    background-color: skyblue; /* Lighter background for better contrast */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
@@ -35,7 +35,7 @@
     color: #333;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f4f4f4;
+    background-color: lightseagreen;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
