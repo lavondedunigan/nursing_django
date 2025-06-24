@@ -28,8 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "localhost",
-    "127.0.0.1"
-    
+    "127.0.0.1",
+    ".herokuapp.com"
 ]
 
 
@@ -135,3 +135,21 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# if running in heroku, use postgres db instead of sqlite
+if "DYNO" in os.environ:
+    import django_heroku
+    django_heroku.settings(locals())
+    
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_SSL= False
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER=env('SMTP_EMAIL')
+EMAIL_HOST_PASSWORD=env('SMTP_PASSWORD')
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+

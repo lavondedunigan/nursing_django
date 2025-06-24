@@ -57,3 +57,25 @@ python3 manage.py startapp pages
 # git commit -m "correct errors"
 
 # git push
+
+# create the list view
+-views
+-template
+-url
+
+# style it 
+
+
+
+
+
+
+# Deploy
+git add -A
+git commit -m "something here"
+git push -u heroku migrations
+
+
+
+# Push to github
+git push -u origin main       <-or- master
