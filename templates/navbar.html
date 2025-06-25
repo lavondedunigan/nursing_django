@@ -50,7 +50,8 @@ style="color: whitesmoke !important;" >
                     {% if user.is_authenticated %}
                         <span class="navbar-text me-3" style="color: whitesmoke !important;">Welcome!</span>
                     {% else %}
-                        <a class="btn btn-outline-dark" href="{% url 'logout'%}">Logout</a>
+                        <a class="btn btn-outline-dark" href="" style="color: whitesmoke !important;">Login</a>
+                        <a class="btn btn-outline-dark" href="" style="color: whitesmoke !important;">Register</a>
                     {%  endif %}      
     </div>
     <a class="navbar-brand" href="" style="color: whitesmoke !important;">Hospital Management</a>
