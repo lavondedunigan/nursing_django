@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s*bbg25hz_*o4h(y#yz(f4&b73yd5=^l9(e(n)gqc)val6y6x*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "localhost",
@@ -138,9 +138,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # if running in heroku, use postgres db instead of sqlite
-if "DYNO" in os.environ:
-    import django_heroku
-    django_heroku.settings(locals())
+#if "DYNO" in os.environ:
+#    import django_heroku
+#    django_heroku.settings(locals())
     
 
 
