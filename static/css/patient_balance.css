@@ -10,4 +10,135 @@ body {
     border-radius: 100%;
 
 
+
+    margin: 0 !important;
+    padding: 20px !important;       
+    box-sizing: border-box !important;
+    transition: background-color 0.3s ease-in-out !important;   
+    overflow: auto !important;  
+    display: flex !important;   
+    flex-direction: column !important;  
+    justify-content: center !important;
+    align-items: center !important; 
+
+    margin-top: 60px !important; /* Adjust for fixed navbar height */
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important; /* Center the content */
+    padding: 20px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;  
+
+    margin-bottom: 20px !important; /* Add some space at the bottom */
+    font-family: 'Arial', sans-serif !important;    
+    color: #333 !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    -webkit-font-smoothing: antialiased !important;
+    /* Smoother text rendering on WebKit browsers */
+    text-align: center !important;
+    /* Centering text for better readability */
+    background-image: url('../img/pt-balances.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    /* Adding a background image with cover, center, no-repeat, and fixed attachment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    /* Adding a subtle shadow for depth */  
+    border: 1px solid #ddd !important;
+    /* Adding a light border for definition */
+    padding: 20px !important;
+    /* Padding for the body to ensure content is not flush against the edges */
+    margin: 0 auto !important;
+    /* Centering the body content */
+    border-radius: 8px !important;
+    /* Rounded corners for a modern look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    /* Subtle shadow for depth */
+
+    background-color: #f0f0f0 !important;
+    /* Light background color for better contrast */    
+    color: #333 !important;
+    /* Dark text color for readability */
+    font-family: 'Arial', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    /* Line height for better readability */
+    -webkit-font-smoothing: antialiased !important;
+    /* Smoother text rendering on WebKit browsers */
+
+    text-align: center !important;
+    /* Centering text for better readability */
+    box-sizing: border-box !important;
+    /* Ensuring padding and margin are included in the element's total width and height */
+    transition: background-color 0.3s ease-in-out !important;
+    /* Smooth transition for background color changes */
+    overflow: auto !important;
+    /* Allow scrolling if content overflows */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /* Centering content vertically and horizontally */
+    margin-top: 60px !important; /* Adjust for fixed navbar height */   
+    width: 100% !important;
+    /* Full width for the body */
+    max-width: 1200px !important;
+
+    /* Limit the width of the body */
+    margin: 0 auto !important;
+    /* Center the body */
+
+    padding: 20px !important;
+    /* Padding for the body */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+    /* Subtle shadow for depth */
+
+    border-radius: 8px !important;
+    /* Rounded corners for a modern look */
+
+    margin-bottom: 20px !important; /* Add some space at the bottom */
+    font-family: 'Arial', sans-serif !important;    
+    color: #333 !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+
+    -webkit-font-smoothing: antialiased !important;
+    /* Smoother text rendering on WebKit browsers */
+    background-color: #f0f0f0 !important;
+    /* Light background color for better contrast */    
+    color: #333 !important;
+    /* Dark text color for readability */
+    font-family: 'Arial', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    /* Line height for better readability */
+    -webkit-font-smoothing: antialiased !important;
+    /* Smoother text rendering on WebKit browsers */
+    text-align: center !important;
+    /* Centering text for better readability */
+    box-sizing: border-box !important;
+    /* Ensuring padding and margin are included in the element's total width and height */
+    transition: background-color 0.3s ease-in-out !important;
+    /* Smooth transition for background color changes */    
+    overflow: auto !important;
+    /* Allow scrolling if content overflows */
+
+    display: flex !important;
+    flex-direction: column !important;      
+    justify-content: center !important;
+    align-items: center !important; 
+
+    /* Centering content vertically and horizontally */
+    margin-top: 60px !important; /* Adjust for fixed navbar height */       
+    width: 100% !important;
+    /* Full width for the body */
+
+    max-width: 1200px !important;
+    /* Limit the width of the body */
+
+
+
+
 }

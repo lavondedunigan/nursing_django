@@ -4,7 +4,7 @@
 
 {% load static %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/patient_balance.css' %}">
+    <link rel="stylesheet" href="{% static 'css/patient_balance.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -14,72 +14,51 @@
     <div class="header">
         <h2>Patient Balance</h2>
         <p>Here you can view and manage patient balances.</p>
+        <a href="" class="btn btn-primary">Add New Note</a>
+        <a href="" class="btn btn-secondary">Patient Account</a>
+        <a href="" class="btn btn-success">Patient Balance</a>
+        <a href="" class="btn btn-info">View Notes</a>
+    </div>
+   
 <div class="patient-balance">
-        <h3>Patient Balance Summary</h3>
+        <h2>Patient Id: 123456 Balance Summary</h2>
         <p>This is the patient balance</p>
         <p>$1100.00</p>
     </div>
 
     <div class="patient-balance">
-        <h3>Patient Balance Summary</h3>
+        <h2>Patient Id:345823 Balance Summary</h2>
         <p>This is the patient balance</p>
         <p>$2,356.09</p>
     </div>
 
     <div class="patient-balance">
-        <h3>Patient Balance Summary</h3>
-        <p>This is the patient balance</p>
-        <p>$1,089.00</p>
-    </div>  
-Patient Balance
-Patient Name:Joi Dunigan
-Patient ID: 456789
-Insurance Provider: SomebodyCare Inc.
-Insurance Policy Number: ABC654321
-Insurance Coverage: 80%
-Outstanding Balance: $400.00
-Last Payment Date: 2025-01-15
-Next Payment Due: 2025-07-01
-Payment History: 1 payment made in the last 6 months
-Payment Method: Credit Card
-Payment Status: Active
-Contact Information:
-This is the patient balance
-$1100.00
-
-Patient Balance
-Patient Name: Somerz Isabella
-Patient ID: 4560321
-Insurance Provider: HealthCare Inc.
-Insurance Policy Number: ABC123456
-Insurance Coverage: 90%
-Outstanding Balance: $1,089.00
-Last Payment Date: 2025-06-01
-Next Payment Due: 2025-07-01
-Payment History: 4 payments made in the last 6 months
-Payment Method: Credit Card
-Payment Status: Active
-Contact Information:
-This is the patient balance
-$2,356.09
-
-Patient Balance
-Patient Name: Fiane Parker
-Patient ID: 456789
-Insurance Provider: HealthCare Inc.
-Insurance Policy Number: ABC123456
-Insurance Coverage: 80%
-Outstanding Balance: $1,089.00
-Last Payment Date: 2023-10-01
-Next Payment Due: 2023-11-01
-Payment History: 5 payments made in the last 6 months
-Payment Method: Credit Card
-Payment Status: Active
-Contact Information:
-This is the patient balance
-$1,089.00
-    
+        <h2>Patient Id: 157463 Balance Summary</h2>
+        <h4>This is the patient balance</h4>  
+        <p>$230.78</p>
     </div>
+
+      <div class="patient-balance">
+        <h2>Patient Id: 25963 Balance Summary</h2>
+        <h4>This is the patient balance</h4>  
+        <p>$200.90</p>
+    </div>
+    <div class="patient-balance">
+        <h2>Patient Id: 548712 Balance Summary</h2>
+        <h4>This is the patient balance</h4>
+        <p>$920.09</p>                  
+    <div class="patient-balance">       
+        <h2>Patient Id: 23571 Balance Summary</h2>
+        <h4>This is the patient balance</h4>  
+        <p>1300.56</p>
+  <div class="patient-balance">
+        <h2>Patient Id: 357459 Balance Summary</h2>
+        <h4>This is the patient balance</h4>  
+        <p>$400.00</p>
+    </div>
+
+
+
 
     <div class="list">
         {% for note in note_list %}
@@ -89,54 +68,7 @@ $1,089.00
                 <img src="{{ note.image.url }}">
                 {% endif %}
             
-                <h3>{{ note.title }}</h3>
-                <label>{{ note.created_on }}</label>
-
-                <div class="note-content">
-                    <label class="hint">Sergio Inzunza:</label>
-                    <h5>{{ note.patient_name }}</h5>
-
-                    <label class="hint">Patient ID:</label>
-                    <p>{{ note.patient_id }}</p>
-
-                    <label class="hint">Insurance Provider:</label>
-                    <p>{{ note.insurance_provider }}</p>
-                    <p>{{ note.content }}</p> 
-
-                    <label class="hint">Insurance Policy Number:</label>
-                    <p>{{ note.insurance_policy_number }}</p>
-
-                    <label class="hint">Insurance Coverage:</label>
-                    <p>{{ note.insurance_coverage }}</p>
-
-                    <label class="hint">Outstanding Balance:</label>
-                    <p>{{ note.outstanding_balance }}</p>
-
-                    <label class="hint">Last Payment Date:</label>
-                    <p>{{ note.last_payment_date }}</p>
-
-                    <label class="hint">Next Payment Due:</label>
-                    <p>{{ note.next_payment_due }}</p>
-
-                    <label class="hint">Payment History:</label>
-                    <p>{{ note.payment_history }}</p>
-
-                    <label class="hint">Payment Method:</label>
-                    <p>{{ note.payment_method }}</p>
-
-                    <label class="hint">Payment Status:</label>
-                    <p>{{ note.payment_status }}</p>
-
-                    <label class="hint">Contact Information:</label>
-                    <p>{{ note.contact_information }}</p>
-                    <p>{{ note.content }}</p>
-
-                    <label class="hint">Notes:</label>
-                    <p>{{ note.notes }}</p>
-                    <p>{{ note.content }}</p>
-                    
-                    <label class="hint">Additional Information:</label>
-                    <p>{{ note.additional_information }}</p>
+                
                     <a href="" class="btn btn-primary">View Balance</a>
                     <a href="" class="btn btn-secondary">Edit Balance</a>
                     <form action="" method="post" class="d-inline">

@@ -2,7 +2,10 @@ note-list   {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+  background-color: blue !important;
 }
+
 note-item {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -302,3 +305,26 @@ note-item .note-actions button.edit:hover,
 note-item .note-actions button.delete:hover {
   background-color: #0056b3;
 }   
+
+
+.note-list, .list, .note, .note-content {    
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+}
+
+.note {
+    margin-bottom: 3rem !important;
+}
+
+
+form {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    margin: 0 auto !important;
+}
